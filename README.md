@@ -1,7 +1,7 @@
 
-## Getting Started
+## Начало работы
 
-First, run the development server:
+Сначала запустите сервер разработки:
 
 ```bash
 npm run dev
@@ -11,9 +11,9 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в браузере, чтобы увидеть результат.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Вы можете начать редактировать страницу, изменив файл `pages/index.tsx`. Страница автоматически обновляется по мере редактирования файла.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
