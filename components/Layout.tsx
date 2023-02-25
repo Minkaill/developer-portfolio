@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import Header from "./Sidebar";
+import Header from "./Header";
 
 type layoutProps = {
   children: ReactNode;

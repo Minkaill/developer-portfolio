@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  font-size: 18px;
+
+  nav {
+    max-width: 1344px;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    .links {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        font-weight: 400;
+      }
+
+      button {
+        border: 2px solid #6e07f3;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: inherit;
+        color: #6e07f3;
+        transition-duration: 0.2s;
+        padding: 10px 25px;
+        border-radius: 16px;
+
+        &:hover {
+          transition-duration: 0.2s;
+          color: white;
+          background-color: #6e07f3;
+        }
+      }
+    }
+  }
+}

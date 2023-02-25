@@ -1,0 +1,31 @@
+.container {
+  max-width: 1344px;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+
+  .header {
+    h1 {
+      font-size: 48px;
+      margin-bottom: 14px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+
+  .photo {
+    margin-top: 15px;
+  }
+
+  .devices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+  }
+}
