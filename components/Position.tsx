@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Position.module.scss";
 import Image from "next/image";
+import { animate, spring, timeline } from "motion";
 
 const Position = () => {
   return (
@@ -8,8 +9,7 @@ const Position = () => {
       <div className={styles.header}>
         <h1>Frontend Developer</h1>
         <p>
-          Я разрабатываю и кодирую красивые простые вещи, и мне нравится то, что
-          я делаю.
+          Я разрабатываю и кодирую на React, и мне нравится то, что я делаю.
         </p>
       </div>
 

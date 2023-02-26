@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  background-color: #6e07f3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 144px 72px 288px;
+
+  .text {
+    width: 820px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}

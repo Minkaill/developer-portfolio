@@ -1,6 +1,6 @@
 .container {
   max-width: 1344px;
-  padding: 40px 0px;
+  padding: 80px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@
   }
 
   .photo {
-    margin-top: 15px;
+    margin: 10px 0px 0px 0px;
   }
 
   .devices {
@@ -27,5 +27,9 @@
     display: flex;
     justify-content: center;
     padding: 100px 0px 0px 0px;
+
+    img {
+      margin-bottom: -7px;
+    }
   }
 }

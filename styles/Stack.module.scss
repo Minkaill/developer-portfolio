@@ -1,0 +1,64 @@
+.container {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  margin: -160px auto;
+  background-color: white;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  border-radius: 10px;
+  font-size: 18px;
+
+  h1,
+  h4 {
+    font-weight: 600;
+  }
+
+  hr {
+    border: 1px solid #eeeeee;
+  }
+
+  .stack {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    padding: 70px 45px;
+
+    .header {
+      width: 100%;
+      h1 {
+        font-size: 24px;
+        margin: 24px 0px;
+      }
+      p {
+        margin-bottom: 36px;
+      }
+    }
+
+    .language {
+      width: 100%;
+      h4 {
+        margin: 20px 0px 8px;
+        color: #6e07f3;
+      }
+
+      p {
+        margin-bottom: 36px;
+      }
+    }
+
+    .dev_tools {
+      width: 100%;
+      h4 {
+        color: #6e07f3;
+        margin: 32px 0px 8px 0px;
+      }
+
+      ul {
+        line-height: 34px;
+      }
+    }
+  }
+}
