@@ -38,6 +38,3 @@ next-env.d.ts
 
 # ignore all logs
 *.log
-
-# ignore database
-/pages/api/
