@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignore all logs
+*.log
+
+# ignore database
+/pages/api/data/user.ts
