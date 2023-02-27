@@ -1,19 +1,14 @@
 import React from "react";
 import styles from "../styles/Aboutme.module.scss";
+import { FC } from "react";
+import { IUser } from "@/types";
 
-const Aboutme = () => {
+const Aboutme: FC<IUser> = ({ aboutme }) => {
   return (
     <div className={styles.container}>
       <div className={styles.text}>
-        <h1>Привет, я Минкаил. Приятно познакомиться.</h1>
-        <p>
-          Начав свой путь frontend-разработчика 3 года назад, я выполнял
-          удаленную работу на фрилансе, участвовал в командных проектах и
-          сотрудничал с талантливыми людьми, разрабатывая приложения для
-          бизнеса, так и для потребителей. Я спокойно уверен в себе, любопытен
-          от природы и постоянно работаю над совершенствованием своих навыков,
-          решая по несколько задач за раз.
-        </p>
+        <h1>{aboutme.title}</h1>
+        <p>{aboutme.text}</p>
       </div>
     </div>
   );

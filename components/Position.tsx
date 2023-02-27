@@ -1,24 +1,25 @@
 import React from "react";
 import styles from "../styles/Position.module.scss";
 import Image from "next/image";
-import { animate, spring, timeline } from "motion";
+import { FC } from "react";
+import { IUser } from "@/types";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
-const Position = () => {
+const Position: FC<IUser> = ({ position }) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>Frontend Developer</h1>
-        <p>
-          Я разрабатываю и кодирую на React, и мне нравится то, что я делаю.
-        </p>
+        <h1>{position.position[0].title}</h1>
+        <p>{position.title}</p>
       </div>
 
       <div className={styles.photo}>
-        <Image src="/mf-avatar.svg" width={210} height={230} alt="me" />
-      </div>
-
-      <div className={styles.devices}>
-        <Image src="/hero-devices.svg" width={860} height={360} alt="devices" />
+        <Player
+          autoplay
+          loop
+          src="https://assets10.lottiefiles.com/packages/lf20_fnfwn222.json"
+          style={{ height: "500px", width: "500px" }}
+        ></Player>
       </div>
     </div>
   );

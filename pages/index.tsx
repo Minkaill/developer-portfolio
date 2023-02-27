@@ -5,10 +5,12 @@ import axios from "axios";
 import { animate, scroll } from "motion";
 import React from "react";
 import Stack from "@/components/Stack";
-import { GetStaticProps } from "next";
+import { IUser } from "@/types";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await axios.get(`${process.env.API_HOST}/user/`);
+  const user: IUser[] = data;
 
   if (!data) {
     return {
@@ -17,19 +19,19 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 
   return {
-    props: { user: data },
+    props: { user },
   };
 };
 
-const Home = () => {
+const Home = ({ user }: InferGetStaticPropsType<typeof getStaticProps>) => {
   React.useEffect(() => {
     scroll(animate(".progress", { scaleX: [0, 1] }));
   }, []);
   return (
     <div className={styles.wrapper}>
-      <Position />
-      <Aboutme />
-      <Stack />
+      <Position {...user} />
+      <Aboutme {...user} />
+      <Stack {...user} />
       <div
         className="progress"
         style={{ transform: "scaleX(var(--motion-scaleX))" }}

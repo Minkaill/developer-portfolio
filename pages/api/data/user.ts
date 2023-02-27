@@ -34,5 +34,46 @@ export const user = {
         ],
       },
     },
+
+    {
+      id: 2,
+      frontend: {
+        id: 1,
+        icon: "http://localhost:3000/_next/image?url=%2Fcode.png&w=64&q=75",
+        position: {
+          position: "Backend",
+          title:
+            "Мне нравится кодировать вещи с нуля, и мне нравится воплощать идеи в жизнь в браузере.",
+        },
+        language: [{ name: "JavaScript" }],
+        dev_tools: [
+          { id: 1, name: "Node" },
+          { id: 2, name: "Strapi" },
+          { id: 3, name: "Express" },
+          { id: 4, name: "Mongoose" },
+        ],
+      },
+    },
+
+    {
+      id: 3,
+      frontend: {
+        id: 1,
+        icon: "http://localhost:3000/_next/image?url=%2Fcode.png&w=64&q=75",
+        position: {
+          position: "Design",
+          title:
+            "Мне нравится кодировать вещи с нуля, и мне нравится воплощать идеи в жизнь в браузере.",
+        },
+        language: [{ name: "UX/UI" }],
+        dev_tools: [
+          { id: 1, name: "Figma" },
+          { id: 2, name: "Adobe Photoshop" },
+          { id: 3, name: "Sketch" },
+          { id: 4, name: "Webflow" },
+          { id: 5, name: "Affinity Designer" },
+        ],
+      },
+    },
   ],
 };

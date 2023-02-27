@@ -19,17 +19,12 @@
   }
 
   .photo {
-    margin: 10px 0px 0px 0px;
-  }
-
-  .devices {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px 0px 0px 0px;
-
-    img {
-      margin-bottom: -7px;
-    }
+    align-items: center;
+    margin-bottom: -40px;
+    position: relative;
+    right: 20px;
   }
 }
