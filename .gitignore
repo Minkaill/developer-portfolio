@@ -40,4 +40,4 @@ next-env.d.ts
 *.log
 
 # ignore database
-/pages/api/data
+/pages/api/
