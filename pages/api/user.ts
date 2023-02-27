@@ -2,12 +2,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { user } from "./data/user";
 
-type Data = {
-  name: string;
-};
-
-const handler = (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.status(200).json({ name: "John Doe" });
+const handler = (req: NextApiRequest, res: NextApiResponse) => {
+  res.status(200).json(user);
 };
 
 export default handler;
