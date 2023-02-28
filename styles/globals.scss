@@ -34,3 +34,40 @@ a {
   height: 10px;
   background: red;
 }
+
+.error {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .error_item {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 13px 16px #9c9c9c;
+    position: relative;
+
+    .lf-player-container {
+      position: absolute;
+      top: -195px;
+      left: 35px;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      width: 80%;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}

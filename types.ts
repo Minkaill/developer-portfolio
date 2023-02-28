@@ -34,4 +34,9 @@ export type IUser = {
       }[];
     };
   }[];
+  companies: {
+    id: number;
+    icon: string;
+    name: string;
+  }[];
 };

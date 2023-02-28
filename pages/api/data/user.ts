@@ -76,4 +76,16 @@ export const user = {
       },
     },
   ],
+  companies: [
+    {
+      id: 1,
+      icon: "https://sun9-west.userapi.com/sun9-61/s/v1/ig2/qopNs5KBFs5dANH4EY1C8VjnL2ZZniKkeSpda5XwTdHyAu8iEGa9UveJstw9uRdSUluYjFnCb6kBUdxS-MTkmHHb.jpg?size=640x640&quality=95&type=album",
+      name: "Intocode",
+    },
+    {
+      id: 2,
+      icon: "https://expovision.io/static/media/logoToken.9cca70d8d5701b3e0d1b.png",
+      name: "expovision",
+    },
+  ],
 };
