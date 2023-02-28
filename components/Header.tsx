@@ -26,7 +26,9 @@ const Header = () => {
           >
             Резюме
           </a>
-          <button>Обратная связь</button>
+          <Link href="/feedback">
+            <button>Обратная связь</button>
+          </Link>
         </div>
       </nav>
     </header>

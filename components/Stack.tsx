@@ -29,7 +29,7 @@ const Stack: FC<IUser> = ({ skills }) => {
               <p>{frontend.language.map(({ name }) => name)}</p>
             </div>
             <div className={styles.dev_tools}>
-              <h4>Инструменты разработчика:</h4>
+              <h4>Инструменты:</h4>
               <ul>
                 {frontend.dev_tools.map(({ id, name }) => (
                   <li key={id}>{name}</li>

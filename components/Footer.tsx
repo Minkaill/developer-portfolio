@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "../styles/Footer.module.scss";
 import { BsTelegram, BsGithub, BsDiscord } from "react-icons/bs";
+import Link from "next/link";
 
 const Footer = () => {
   const copy = async () => {
@@ -16,7 +17,9 @@ const Footer = () => {
           Заинтересованы в совместной работе?
           <br /> Мы должны назначить время, чтобы пообщаться.
         </p>
-        <button>Давайте сделаем это!</button>
+        <Link href="/feedback">
+          <button>Let's do this!</button>
+        </Link>
       </div>
 
       <div className={styles.title}>
@@ -37,7 +40,7 @@ const Footer = () => {
 
         <div className={styles.license}>
           <p>
-            Ручная работа от
+            Handcrafted by me ©
             <a href="https://github.com/Minkaill" target="_blank">
               Minkail
             </a>

@@ -13,16 +13,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 70px;
+    padding: 56px 120px;
     border-radius: 12px;
     margin: -60px 0px 0px 0px;
     background-color: #141c3a;
+
+    p {
+      font-weight: 100;
+    }
 
     h1 {
       font-size: 28px;
     }
 
     button {
+      width: 200px;
       background-color: inherit;
       border: 1px solid #5be9b9;
       cursor: pointer;
@@ -61,7 +66,8 @@
 
       p {
         margin-top: 28px;
-        font-size: 24px;
+        font-size: 22px;
+        font-weight: 100;
       }
     }
 
@@ -70,7 +76,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 100px 0;
+      margin: 80px 0 50px 0px;
 
       svg {
         font-size: 30px;
@@ -88,8 +94,11 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      align-items: center;
       a {
         margin-left: 5px;
+        color: #07f356;
+        font-weight: 800;
       }
     }
   }
