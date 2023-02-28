@@ -9,7 +9,7 @@ const Stack: FC<IUser> = ({ skills }) => {
   React.useEffect(() => {
     animate(
       `.${styles.container}`,
-      { y: [500, 0] },
+      { y: [100, 0] },
       { y: { easing: spring({ velocity: 500 }) } }
     );
   }, []);

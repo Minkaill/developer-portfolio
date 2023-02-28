@@ -4,11 +4,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 200px auto;
+  margin: 200px auto 300px;
 
   h1 {
     margin-bottom: 70px;
-    width: 800px;
+    width: 100%;
+    font-size: 25px;
     font-weight: 400;
     text-align: center;
   }
@@ -28,7 +29,7 @@
 
       h2 {
         font-weight: 300;
-        font-size: 34px;
+        font-size: 28px;
         margin-left: 15px;
       }
 

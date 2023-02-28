@@ -9,7 +9,7 @@ const Companies: FC<IUser> = ({ companies }) => {
   React.useEffect(() => {
     animate(
       `.${styles.container}`,
-      { y: [700, 0] },
+      { y: [100, 0] },
       { y: { easing: spring({ velocity: 500 }) } }
     );
   }, []);
