@@ -4,19 +4,28 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import emailjs from "@emailjs/browser";
 
 const Feedback = () => {
-  const form = React.useRef<HTMLFormElement | string>("");
-  console.log(form);
+  const form = React.useRef<any>("");
+  console.log(form.current);
 
-  //   const sendEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //     e.preventDefault();
+  const sendEmail = (e: any) => {
+    e.preventDefault();
 
-  //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-  //       .then((result) => {
-  //           console.log(result.text);
-  //       }, (error) => {
-  //           console.log(error.text);
-  //       });
-  //   };
+    emailjs
+      .sendForm(
+        "service_o94h4x4",
+        "template_s54apn4",
+        form.current,
+        "K1etVHiF8biZH6T9W"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -35,11 +44,11 @@ const Feedback = () => {
             Не стесняйся связываться со мной - я буду только рад пообщаться!
           </h1>
         </div>
-        <form className={styles.form}>
+        <form ref={form} className={styles.form} onSubmit={sendEmail}>
           <div className={styles.name_email}>
             <div className={styles.name}>
               <label>Name</label>
-              <input type="text" name="user_name" />
+              <input type="text" name="fullname" />
             </div>
             <div className={styles.email}>
               <label>Email</label>
@@ -48,7 +57,7 @@ const Feedback = () => {
           </div>
           <div className={styles.message}>
             <label>Message</label>
-            <textarea name="message" />
+            <textarea maxLength={250} minLength={5} name="message" />
           </div>
           <button type="submit">Отправить</button>
         </form>
