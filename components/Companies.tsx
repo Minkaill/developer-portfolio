@@ -2,17 +2,9 @@ import React from "react";
 import styles from "../styles/Works.module.scss";
 import Image from "next/image";
 import { FC } from "react";
-import { animate, spring } from "motion";
 import { IUser } from "@/types";
 
 const Companies: FC<IUser> = ({ companies }) => {
-  React.useEffect(() => {
-    animate(
-      `.${styles.container}`,
-      { y: [100, 0] },
-      { y: { easing: spring({ velocity: 500 }) } }
-    );
-  }, []);
   return (
     <div className={styles.container}>
       <h1>

@@ -2,18 +2,9 @@ import React from "react";
 import styles from "../styles/Position.module.scss";
 import { FC } from "react";
 import { IUser } from "@/types";
-import { animate, spring } from "motion";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Position: FC<IUser> = ({ position }) => {
-  React.useEffect(() => {
-    animate(
-      `.${styles.container}`,
-      { y: [-50, 0] },
-      { y: { easing: spring({ velocity: 1200 }) } }
-    );
-  }, []);
-
   return (
     <div className={styles.container}>
       <div className={styles.header}>

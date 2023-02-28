@@ -2,17 +2,9 @@ import React from "react";
 import styles from "../styles/Stack.module.scss";
 import Image from "next/image";
 import { FC } from "react";
-import { animate, spring } from "motion";
 import { IUser } from "@/types";
 
 const Stack: FC<IUser> = ({ skills }) => {
-  React.useEffect(() => {
-    animate(
-      `.${styles.container}`,
-      { y: [100, 0] },
-      { y: { easing: spring({ velocity: 500 }) } }
-    );
-  }, []);
 
   return (
     <div className={styles.container}>
