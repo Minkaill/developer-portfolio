@@ -8,6 +8,7 @@ import Stack from "@/components/Stack";
 import { IUser } from "@/types";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Companies from "../components/Companies";
+import Footer from "@/components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await axios.get(`${process.env.API_HOST}/user/`);
@@ -34,6 +35,7 @@ const Home = ({ user }: InferGetStaticPropsType<typeof getStaticProps>) => {
       <Aboutme {...user} />
       <Stack {...user} />
       <Companies {...user} />
+      <Footer />
       <div
         className="progress"
         style={{ transform: "scaleX(var(--motion-scaleX))" }}
