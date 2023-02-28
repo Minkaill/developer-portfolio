@@ -9,8 +9,8 @@ const Position: FC<IUser> = ({ position }) => {
   React.useEffect(() => {
     animate(
       `.${styles.container}`,
-      { y: [-200, 0] },
-      { y: { easing: spring({ velocity: 2500 }) } }
+      { y: [-50, 0] },
+      { y: { easing: spring({ velocity: 1200 }) } }
     );
   }, []);
 

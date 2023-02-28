@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  background-color: #6e07f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .contact_us {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 20px;
+  }
+}

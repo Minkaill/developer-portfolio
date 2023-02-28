@@ -1,4 +1,40 @@
 .container {
   width: 1440px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px auto;
+
+  h1 {
+    margin-bottom: 70px;
+    width: 800px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .works {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .company {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+
+      h2 {
+        font-weight: 300;
+        font-size: 34px;
+        margin-left: 15px;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
 }
