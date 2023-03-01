@@ -15,7 +15,7 @@ export const user = {
       id: 1,
       frontend: {
         id: 1,
-        icon: "http://localhost:3000/_next/image?url=%2Fcode.png&w=64&q=75",
+        icon: "/frontend.png",
         position: {
           position: "Frontend",
           title:
@@ -23,11 +23,11 @@ export const user = {
         },
         language: [{ name: "JavaScript" }],
         dev_tools: [
-          { id: 1, name: "React" },
-          { id: 2, name: "Next" },
-          { id: 3, name: "Svelte" },
-          { id: 4, name: "Redux Toolkit" },
-          { id: 5, name: "TypeScript" },
+          { id: 1, name: "TypeScript" },
+          { id: 2, name: "React JS" },
+          { id: 3, name: "Next JS" },
+          { id: 4, name: "Svelte" },
+          { id: 5, name: "Redux Toolkit" },
           { id: 6, name: "Babel" },
           { id: 7, name: "Webpack" },
           { id: 8, name: "REST API" },
@@ -39,18 +39,19 @@ export const user = {
       id: 2,
       frontend: {
         id: 1,
-        icon: "http://localhost:3000/_next/image?url=%2Fcode.png&w=64&q=75",
+        icon: "/backend.png",
         position: {
           position: "Backend",
           title:
-            "Мне нравится кодировать вещи с нуля, и мне нравится воплощать идеи в жизнь в браузере.",
+            "Для правильного построения здания, нужен крепкий фундамент, именно этим мне и нравится заниматься на стороне сервера.",
         },
         language: [{ name: "JavaScript" }],
         dev_tools: [
           { id: 1, name: "Node" },
           { id: 2, name: "Strapi" },
-          { id: 3, name: "Express" },
+          { id: 3, name: "MongoDB" },
           { id: 4, name: "Mongoose" },
+          { id: 5, name: "Express" },
         ],
       },
     },
@@ -59,19 +60,22 @@ export const user = {
       id: 3,
       frontend: {
         id: 1,
-        icon: "http://localhost:3000/_next/image?url=%2Fcode.png&w=64&q=75",
+        icon: "/css.png",
         position: {
-          position: "Design",
+          position: "Other",
           title:
-            "Мне нравится кодировать вещи с нуля, и мне нравится воплощать идеи в жизнь в браузере.",
+            "Я ценю простую структуру контента, чистые модели дизайна и продуманное взаимодействие.",
         },
-        language: [{ name: "UX/UI" }],
+        language: [{ name: "HTML - CSS" }],
         dev_tools: [
-          { id: 1, name: "Figma" },
-          { id: 2, name: "Adobe Photoshop" },
-          { id: 3, name: "Sketch" },
-          { id: 4, name: "Webflow" },
-          { id: 5, name: "Affinity Designer" },
+          { id: 1, name: "Tailwind UI - CSS" },
+          { id: 2, name: "Flowbite" },
+          { id: 3, name: "MUI" },
+          { id: 4, name: "Bootsrap" },
+          { id: 5, name: "AOS" },
+          { id: 6, name: "Motion One" },
+          { id: 7, name: "Figma" },
+          { id: 8, name: "Adobe Photoshop" },
         ],
       },
     },

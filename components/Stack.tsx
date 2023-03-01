@@ -5,14 +5,13 @@ import { FC } from "react";
 import { IUser } from "@/types";
 
 const Stack: FC<IUser> = ({ skills }) => {
-
   return (
     <div className={styles.container}>
       {skills.map(({ id, frontend }) => (
         <>
           <div key={id} className={styles.stack}>
             <div className={styles.header}>
-              <Image src="/code.png" width={60} height={60} alt="code" />
+              <Image src={frontend.icon} width={60} height={60} alt="code" />
               <h1>{frontend.position.position}</h1>
               <p>{frontend.position.title}</p>
             </div>

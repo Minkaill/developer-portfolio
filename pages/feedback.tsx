@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 const Feedback = () => {
   const form = React.useRef<any>("");
   const router = useRouter();
+
   const [successfully, setSuccessfully] = React.useState<boolean>(false);
   const [feedback, setFeedBack] = React.useState<any>({
     fullname: "",
@@ -62,7 +63,6 @@ const Feedback = () => {
   if (successfully === false) {
     return (
       <div className={styles.wrapper}>
-        <hr />
         <div className={styles.feedback}>
           <div className={styles.player}>
             <Player
@@ -121,7 +121,7 @@ const Feedback = () => {
           autoplay
           loop
           src="https://assets2.lottiefiles.com/packages/lf20_vkygmedu.json"
-          style={{ height: "500px", width: "500px" }}
+          style={{ height: "300px", width: "300px" }}
         ></Player>
       </div>
     </div>

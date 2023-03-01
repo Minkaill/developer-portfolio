@@ -42,9 +42,14 @@
   }
 }
 
+.hr {
+  width: 100%;
+  border: 1px solid #eee;
+}
+
 @media (max-width: 1440px) {
   .header {
-    width: 80%;
+    width: 1240px;
     margin: auto;
   }
 }
