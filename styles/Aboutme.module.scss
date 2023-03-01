@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  margin: auto;
   background-color: #6e07f3;
   color: white;
   display: flex;
@@ -17,5 +18,11 @@
     p {
       font-size: 20px;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 1440px;
   }
 }

@@ -1,3 +1,9 @@
 .wrappper {
   width: 100%;
 }
+
+@media (max-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+  }
+}

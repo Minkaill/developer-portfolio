@@ -25,7 +25,6 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <hr className={styles.hr} />
     </>
   );
 };
