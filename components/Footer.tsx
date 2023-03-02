@@ -23,7 +23,7 @@ const Footer = () => {
           <br /> Мы должны назначить время, чтобы пообщаться.
         </p>
         <Link href="/feedback">
-          <button>Let's do this!</button>
+          <button>Давайте сделаем это!</button>
         </Link>
       </div>
 
