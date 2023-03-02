@@ -8,8 +8,8 @@ const Position: FC<IUser> = ({ position }) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>{position.position[0].title}</h1>
-        <p>{position.title}</p>
+        <h1>{position?.position[0].title}</h1>
+        <p>{position?.title}</p>
       </div>
 
       <div className={styles.photo}>

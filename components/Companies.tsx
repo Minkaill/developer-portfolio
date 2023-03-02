@@ -11,7 +11,7 @@ const Companies: FC<IUser> = ({ companies }) => {
         Я горжусь тем, что сотрудничал с некоторыми потрясающими компаниями:
       </h1>
       <div className={styles.works}>
-        {companies.map(({ id, icon, name }) => (
+        {companies?.map(({ id, icon, name }) => (
           <div key={id} className={styles.company}>
             <Image src={icon} width={70} height={70} alt="comp" />
             <h2>{name}</h2>

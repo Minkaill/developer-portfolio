@@ -7,8 +7,8 @@ const Aboutme: FC<IUser> = ({ aboutme }) => {
   return (
     <div className={styles.container}>
       <div className={styles.text}>
-        <h1>{aboutme.title}</h1>
-        <p>{aboutme.text}</p>
+        <h1>{aboutme?.title}</h1>
+        <p>{aboutme?.text}</p>
       </div>
     </div>
   );

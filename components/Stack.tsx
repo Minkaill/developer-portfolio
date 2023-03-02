@@ -7,7 +7,7 @@ import { IUser } from "@/types";
 const Stack: FC<IUser> = ({ skills }) => {
   return (
     <div className={styles.container}>
-      {skills.map(({ id, frontend }) => (
+      {skills?.map(({ id, frontend }) => (
         <>
           <div key={id} className={styles.stack}>
             <div className={styles.header}>

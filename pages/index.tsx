@@ -11,18 +11,24 @@ import Companies from "../components/Companies";
 import Footer from "../components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await axios.get("http://localhost:3000/api/user/");
-  const user: IUser[] = data;
+  try {
+    const { data } = await axios.get("http://localhost:3000/api/user/");
+    const user: IUser[] = data;
 
-  if (!data) {
+    if (!data) {
+      return {
+        notFound: true,
+      };
+    }
+
     return {
-      notFound: true,
+      props: { user },
+    };
+  } catch (error) {
+    return {
+      props: { user: null },
     };
   }
-
-  return {
-    props: { user },
-  };
 };
 
 const Home = ({ user }: InferGetStaticPropsType<typeof getStaticProps>) => {
