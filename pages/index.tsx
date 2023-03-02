@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const { data } = await axios.get("http://localhost:3000/api/user/");
+    const { data } = await axios.get(`${process.env.API_HOST}/user/`);
     const user: IUser[] = data;
 
     if (!data) {
