@@ -5,8 +5,13 @@ import { BsTelegram, BsGithub, BsDiscord } from "react-icons/bs";
 import Link from "next/link";
 
 const Footer = () => {
+  const [copyNone, setCopyNone] = React.useState<boolean>(false);
   const copy = async () => {
     await navigator.clipboard.writeText("Minkail#5834");
+    setCopyNone(true);
+    setTimeout(() => {
+      setCopyNone(false);
+    }, 2000);
   };
 
   return (
@@ -35,6 +40,7 @@ const Footer = () => {
           <a href="https://github.com/Minkaill" target="_blank">
             <BsGithub />
           </a>
+          {copyNone && <h1>СКОПИРОВАНО</h1>}
           <BsDiscord onClick={() => copy()} />
         </div>
 

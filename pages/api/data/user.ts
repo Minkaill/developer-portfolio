@@ -88,7 +88,7 @@ export const user = {
     },
     {
       id: 2,
-      icon: "/expovision.png",
+      icon: "/vision.png",
       name: "Expovision",
     },
     {
@@ -98,7 +98,7 @@ export const user = {
     },
     {
       id: 4,
-      icon: "/bilance.jpeg",
+      icon: "/bilance.png",
       name: "Bilance",
     },
   ],
