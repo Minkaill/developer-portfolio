@@ -45,7 +45,7 @@ const Feedback = () => {
               setSuccessfully(true);
               setTimeout(() => {
                 router.push("/");
-              }, 6500);
+              }, 6400);
             }
           },
           (error) => {
